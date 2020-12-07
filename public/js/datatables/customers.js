@@ -156,7 +156,7 @@ var KTDatatableLocalSortDemo = function() {
                     textAlign: 'center',
                     template: function(row) {
                         var status = {
-                            'title': (!row.email_verified_at)?locator.__('No Activated'):locator.__('Activated'),
+                            'title': (!row.email_verified_at)?locator.__('Not Activated'):locator.__('Activated'),
                             'class':(!row.email_verified_at)?locator.__(' kt-badge--danger'):locator.__(' kt-badge--success')
                         };
                         return '<span class="kt-badge ' + status.class + ' kt-badge--inline kt-badge--pill">' + status.title + '</span>';
